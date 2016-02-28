@@ -55,4 +55,4 @@ TidyData <- aggregate(. ~Subjects + Activity, data, mean)
 TidyData <- TidyData[order(TidyData$Subjects, TidyData$Activity),]
 
 ##save data
-write.table(TidyData, file = "tidydata.csv", row.names = FALSE, sep = ",")
+write.table(TidyData, file = "tidydata.txt", row.names = FALSE)
